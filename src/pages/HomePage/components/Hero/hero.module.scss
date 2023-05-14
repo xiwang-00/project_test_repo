@@ -1,0 +1,149 @@
+@use "styles/style" as *;
+
+.hero {
+  padding: 80px 0 100px;
+  background-color: #D44B4B;
+  background-image: url("../../../../../public/assets/images/herobg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% + 250px) bottom;
+}
+
+.hero__inner {
+  max-width: 620px;
+  width: 100%;
+}
+
+.hero__text {
+  margin: 0;
+  font-family: $font-Lato;
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+}
+
+.hero__title {
+  margin: 0 0 31px;
+  font-family: $font-Lato;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 55px;
+  color: #FFFFFF;
+}
+
+.hero__span {
+  padding: 0px 15px;
+  border: 1px solid #FFFFFF;
+  border-radius: 20px;
+}
+
+.hero__button {
+  padding: 18px 97px 22px;
+  font-family: $font-Lato;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 30px;
+  color: #475658;
+  background: #FFFFFF;
+  box-shadow: 2px 2px 4px #A1303C;
+  border-radius: 10px;
+}
+
+@include max-width(1140px) {
+  .hero {
+    background-size: 65% 90%;
+  }
+
+  .hero__inner {
+    max-width: 600px;
+  }
+
+  .hero__title {
+    font-size: 40px;
+    line-height: 55px;
+  }
+
+  .hero__button {
+    padding: 14px 90px 18px;
+    font-size: 21px;
+    line-height: 28px;
+  }
+}
+
+@include max-width(890px) {
+  .hero__inner {
+    max-width: 500px;
+  }
+
+  .hero__title {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .hero__button {
+    padding: 10px 60px 14px;
+    font-size: 19px;
+    line-height: 24px;
+  }
+}
+
+@include max-width(768px) {
+
+  .hero {
+    padding: 20px 0 220px;
+    background-image: url("../../../../../public/assets/images/herobg.png");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: 80% 40%;
+  }
+
+  .hero__inner {
+    max-width: 350px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero__text {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 22px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .hero__button {
+    margin: 0 auto;
+  }
+}
+
+@include max-width(360px) {
+
+  .hero__inner {
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .hero__text {
+    margin-bottom: 15px;
+    font-size: 12px;
+    line-height: 19px;
+    text-align: center;
+  }
+
+  .hero__title {
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+  }
+
+  .hero__button {
+    padding: 10px 50px 14px;
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
